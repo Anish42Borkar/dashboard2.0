@@ -6,11 +6,16 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/dashboard";
 import Layout from "./pages/layout";
+import SidebarContext from "./provider/sidebarProvider";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <SidebarContext>
+        <Layout />
+      </SidebarContext>
+    ),
     children: [{ element: <Dashboard />, index: true }],
   },
 ]);

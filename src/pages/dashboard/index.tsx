@@ -60,7 +60,7 @@ const quarterly: SelectT["options"] = [
 const Dashboard = () => {
   return (
     <>
-      <div className="flex gap-1 flex-wrap justify-between">
+      <div className="flex gap-1 flex-wrap justify-center md:justify-between">
         {data.map((card) => {
           return <Card {...card} />;
         })}
@@ -98,10 +98,10 @@ const Dashboard = () => {
       </div>
 
       <div className="w-full  bg-white mt-10 rounded-md">
-        <div className="px-7 pt-6 flex justify-between">
+        <div className="px-7 pt-6 flex flex-wrap justify-between">
           <p className="text-xl font-bold ">Product Sell</p>
 
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             <Input bg="#fbfbfe" />
             <Select placeholder="Last 30 Days" options={quarterly} />
           </div>

@@ -7,11 +7,19 @@ type InputT = {
 
 const Input = ({ bg = "#fff" }: InputT) => {
   return (
-    <div className={`w-fit rounded-sm flex bg-[${bg}] items-center`}>
+    <div
+      style={{
+        backgroundColor: bg,
+      }}
+      className={`w-fit rounded-sm flex items-center`}
+    >
       <CiSearch className="text-lg w-8 pl-0.5" />
 
       <input
-        className={`pb-1 outline-none bg-[${bg}]  text-sm`}
+        style={{
+          backgroundColor: bg,
+        }}
+        className={`pb-1 outline-none   text-sm`}
         type="text"
         placeholder="Search"
       />
