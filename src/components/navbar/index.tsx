@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="w-full  flex justify-between">
       <p className="font-bold text-xl">Hello Shahrukh 👋🏼, </p>
-      <Input />
+      <Input bg="white" />
     </div>
   );
 };

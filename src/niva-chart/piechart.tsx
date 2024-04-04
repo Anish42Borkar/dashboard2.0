@@ -26,21 +26,22 @@ const data = [
 const Piechart = () => {
   return (
     <div
-      style={{
-        width: "50%",
-        height: "20rem",
-      }}
-      className="relative bg-pink-300"
+      // style={{
+      //   width: "100%",
+      //   height: "10rem",
+      // }}
+      className=" rounded-full w-60 h-60  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
     >
       <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -mt-4">
-        tjis is gg gvyni jiuh iuh
+        <p className="text-3xl font-bold text-center">65%</p>
+        <p className="text-center text-sm leading-4">Total New Customer</p>
       </p>
       <ResponsivePie
         data={data}
-        // margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+        margin={{ top: 10, right: 10, bottom: 10, left: 10 }}
         innerRadius={0.7}
         padAngle={0.7}
-        cornerRadius={3}
+        // cornerRadius={3}
         activeOuterRadiusOffset={8}
         // borderWidth={1}
         // borderColor={{

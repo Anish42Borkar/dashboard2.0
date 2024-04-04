@@ -4,35 +4,35 @@ import { ComputedDatum, ResponsiveBar } from "@nivo/bar";
 const data = [
   {
     country: "Jan",
-    Jan: 105,
+    Jan: 605,
   },
   {
     country: "Feb",
-    Feb: 15,
+    Feb: 500,
   },
   {
     country: "Mar",
-    Mar: 90,
+    Mar: 900,
   },
   {
     country: "Apr",
-    Apr: 129,
+    Apr: 700,
   },
   {
     country: "May",
-    May: 184,
+    May: 800,
   },
   {
     country: "Jun",
-    Jun: 130,
+    Jun: 400,
   },
   {
     country: "Jul",
-    Jul: 890,
+    Jul: 800,
   },
   {
     country: "Aug",
-    Aug: 890,
+    Aug: 900,
   },
   {
     country: "Sep",
@@ -40,15 +40,15 @@ const data = [
   },
   {
     country: "Oct",
-    Oct: 890,
+    Oct: 760,
   },
   {
     country: "Nov",
-    Nov: 890,
+    Nov: 680,
   },
   {
     country: "Dec",
-    Dec: 890,
+    Dec: 750,
   },
 ] as const;
 
@@ -75,9 +75,10 @@ const Barchart = () => {
 
   return (
     <div
+      // className="bg-pink-100"
       style={{
         width: "100%",
-        height: "30rem",
+        height: "20rem",
       }}
     >
       <ResponsiveBar
@@ -97,7 +98,7 @@ const Barchart = () => {
           "Dec",
         ]}
         indexBy="country"
-        margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+        margin={{ top: 10, right: 0, bottom: 70, left: 0 }}
         padding={0.3}
         valueScale={{ type: "linear" }}
         indexScale={{ type: "band", round: true }}
@@ -124,7 +125,7 @@ const Barchart = () => {
         axisRight={null}
         axisBottom={{
           tickSize: 0,
-          tickPadding: 5,
+          tickPadding: 19,
           tickRotation: 0,
           truncateTickAt: 0,
         }}

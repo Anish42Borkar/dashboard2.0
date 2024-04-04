@@ -43,7 +43,7 @@ const menu = [
 
 const Sidebar = () => {
   return (
-    <div className="bg-[#050540] w-60 h-[100vh] fixed text-white">
+    <div className="bg-[#050540] w-60 h-[100vh] fixed text-white z-20">
       <div className="  w-52 flex justify-center px-4">
         <div className="text-2xl flex items-center mt-6">
           <span className="relative">

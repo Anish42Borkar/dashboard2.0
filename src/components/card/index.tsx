@@ -7,14 +7,15 @@ export type CardT = {
   type: string;
   pnl: string;
   percent: number;
+  image: string;
 };
 
-const Card = ({ amount, percent, pnl, type }: CardT) => {
+const Card = ({ amount, percent, pnl, type, image }: CardT) => {
   return (
     <div className="relative w-[17rem] h-40 bg-white rounded-md">
       <img
         className="absolute top-1/2 -translate-y-1/2 w-28 ml-2"
-        src="assets/money.png"
+        src={image}
         alt=""
         srcSet=""
       />

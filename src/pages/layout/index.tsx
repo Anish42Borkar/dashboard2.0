@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div className="flex bg-[#f4f7f8] ">
       <Sidebar />
-      <div className="px-14 py-8 ml-60 w-full">
+      <div className="px-14 py-8 xl:ml-60 w-full">
         <NavBar />
         <div className="mt-10">
           <Outlet />
