@@ -62,7 +62,7 @@ const Sidebar = () => {
         onClick={() => {
           toggle();
         }}
-        className="absolute right-2 top-3 xl:hidden"
+        className="absolute right-2 top-3 xl:hidden cursor-pointer"
       >
         <RxCross1 />
       </span>

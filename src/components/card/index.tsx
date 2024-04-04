@@ -12,7 +12,7 @@ export type CardT = {
 
 const Card = ({ amount, percent, pnl, type, image }: CardT) => {
   return (
-    <div className="relative w-[17rem] h-40 bg-white rounded-md">
+    <div className="relative w-full sm:w-[17rem] h-40 bg-white rounded-md">
       <img
         className="absolute top-1/2 -translate-y-1/2 w-28 ml-2"
         src={image}

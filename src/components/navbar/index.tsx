@@ -13,7 +13,7 @@ const NavBar = () => {
           onClick={() => {
             toggle();
           }}
-          className="xl:hidden"
+          className="xl:hidden cursor-pointer"
         >
           {" "}
           <IoMenu />

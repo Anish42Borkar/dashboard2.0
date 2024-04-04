@@ -16,7 +16,29 @@ const router = createBrowserRouter([
         <Layout />
       </SidebarContext>
     ),
-    children: [{ element: <Dashboard />, index: true }],
+    children: [
+      { element: <Dashboard />, index: true },
+      {
+        path: "/product",
+        element: <Dashboard />,
+      },
+      {
+        path: "/customer",
+        element: <Dashboard />,
+      },
+      {
+        path: "/income",
+        element: <Dashboard />,
+      },
+      {
+        path: "/promote",
+        element: <Dashboard />,
+      },
+      {
+        path: "/help",
+        element: <Dashboard />,
+      },
+    ],
   },
 ]);
 
