@@ -1,8 +1,8 @@
 import React from "react";
 import Card, { CardT } from "../../components/card";
 import Select, { SelectT } from "../../components/select";
-import Barchart from "../../niva-chart/barchart";
-import Piechart from "../../niva-chart/piechart";
+import Barchart from "../../nivo-chart/barchart";
+import Piechart from "../../nivo-chart/piechart";
 import Input from "../../components/input";
 import Table from "../../components/table";
 import { tableData } from "../../constant/tableData";

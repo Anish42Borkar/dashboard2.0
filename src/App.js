@@ -1,4 +1,4 @@
-import Piechart from "./niva-chart/piechart";
+import Piechart from "./nivo-chart/piechart";
 
 const App = () => {
   return (
